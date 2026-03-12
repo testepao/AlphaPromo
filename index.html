@@ -31,6 +31,7 @@
 
 .track{
 	display:flex;
+	width: max-content;
 	animation:marquee 60s linear infinite;
 }
 
@@ -41,8 +42,8 @@
 }
 
 @keyframes marquee{
-		from{transform:translateX(0);}
-		to{transform:translateX(-100%);}
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-50%); }
 }
 
 @media (max-width: 600px) {
@@ -159,6 +160,17 @@
 
 <div class="marquee">
 	<div class="track">
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
+		<!-- Duplicação para efeito infinito -->
 		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
 		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
 		<span class="item">AS MELHORES PROMOÇÕES AQUI</span>
